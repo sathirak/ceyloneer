@@ -1,0 +1,12 @@
+
+.home_paint {
+    position: relative;
+    width: 100vw;
+    height: 550px;
+}
+
+.home_heading {
+    width: 100vw;
+    font-family: "Shippori Antique", sans-serif;
+    font-weight: 400;
+}
