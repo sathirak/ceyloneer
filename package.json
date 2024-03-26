@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "seed": "node -r dotenv/config ./scripts/seed.js",
+    "seed-in": "node -r dotenv/config ./scripts/seed-front-articles.js",
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/postgres": "^0.7.2",
+    "dotenv": "^16.4.5",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18"
