@@ -1,7 +1,7 @@
-import BlogCard from "@/ui/home/blog-card"
 import { BlogCardSkele } from "@/ui/home/blog-card";
 import HeroImage from "@/ui/home/hero-image"
 import Header from "@/ui/home/header"
+import Footer from "@/ui/home/footer";
 import BlogCardWrapper from "@/ui/home/blog-card-wrapper";
 
 export default function Page() {
@@ -17,9 +17,10 @@ export default function Page() {
 					<BlogCardWrapper />
 
 					<BlogCardSkele />
-
 				</div>
 			</main>
+
+			<Footer />
 		</>
 	);
 }
