@@ -15,7 +15,7 @@ interface HeroImageProps {
         <Map />
         <div className="relative inset-0 justify-center">
           <h1 className={`text-slate text-5xl font-bold ${grenze_gotisch.className} `}>Destinations<br/> in Sri Lanka</h1>
-          <p className="text-slate">Explore the regions and towns around Greenland and dig deeper into the experiences in each destination.</p>
+          <p className="text-slate mt-4">Explore the regions and towns around Greenland<br/> and dig deeper into the experiences in each destination.</p>
         </div>
       </div>
     );

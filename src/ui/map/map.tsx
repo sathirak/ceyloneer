@@ -29,11 +29,11 @@ export const Map = () => {
           @keyframes pulse {
             0% {
                 r: 8;
-              opacity: 1;
+              opacity: 0;
             }
             50% {
                 r: 9;
-                opacity: 0.5;
+                opacity: 0.7;
             }
             100% {
                 r: 17;
@@ -43,7 +43,7 @@ export const Map = () => {
           
           .stM {
             z-index:100;
-            animation: pulse 1.5s infinite ease-in-out;
+            animation: pulse 2s infinite ease-in-out;
           }
 
           .st1{font-family:'Roboto-Regular';}
