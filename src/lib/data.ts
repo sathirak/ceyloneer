@@ -4,6 +4,7 @@ import { unstable_noStore as noStore } from 'next/cache';
 
 export async function fetch_front_articles() {
     noStore();
+
     try {
       const articles = await sql`SELECT * FROM front_articles`;
       return articles.rows;
