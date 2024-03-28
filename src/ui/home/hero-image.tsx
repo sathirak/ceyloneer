@@ -1,8 +1,9 @@
+"use client"
+
 import Image from "next/image";
 import {Map} from '../map/map'
-import {Grenze_Gotisch} from "next/font/google";
-
-const grenze_gotisch = Grenze_Gotisch({ subsets: ["latin"] });
+import ProvinceCard from "./province-card";
+import { useState } from "react";
 
 interface HeroImageProps {
     imageUrl: string;
@@ -10,13 +11,17 @@ interface HeroImageProps {
   }
   
   const HeroImage: React.FC<HeroImageProps> = ({ imageUrl, altText }) => {
+
+    const [state, setState] = useState('Sri Lanka');
+
+    const updateState = (newValue:string) => {
+      setState(newValue);
+    };
+
     return (
       <div className="relative p-5 flex items-center justify-center">
-        <Map />
-        <div className="relative inset-0 justify-center">
-          <h1 className={`text-slate text-5xl font-bold ${grenze_gotisch.className} `}>Destinations<br/> in Sri Lanka</h1>
-          <p className="text-slate">Explore the regions and towns around Greenland and dig deeper into the experiences in each destination.</p>
-        </div>
+        <Map state={state} updateState={updateState} />
+        <ProvinceCard state={state}/>
       </div>
     );
   }
