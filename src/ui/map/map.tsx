@@ -15,17 +15,10 @@ export const Map = () => {
         viewBox="0 0 800 600"
       >
 
-        <defs>
-          <radialGradient id="gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-            <stop offset="0%" style={{stopColor: "#0d9387", stopOpacity: 1}} />
-            <stop offset="100%" style={{stopColor: "#18a79b", stopOpacity: 1}} />
-          </radialGradient>
-        </defs>
-
 
         <style type="text/css">
-          {`.st0{fill:#5cb9b1;stroke:#FFFFFF;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray: 5;stroke-dashoffset: 0;}
-          .st0:hover{fill: url(#gradient);transition: fill 0.7s ease, stroke-width 0.7s ease;stroke-width:2;stroke-dasharray: 0;}
+          {`.st0{fill:#32738d;stroke:#FFFFFF;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray: 5;stroke-dashoffset: 0;}
+          .st0:hover{fill: #2c5565;transition: fill 0.7s ease, stroke-width 0.7s ease;stroke-width:2;stroke-dasharray: 0;}
           @keyframes pulse {
             0% {
                 r: 8;
@@ -59,6 +52,9 @@ export const Map = () => {
           <Pr.PrSouthern />
           <Pr.PrUva />
           <Pr.PrWestern />
+
+          {/* below is the marker drawer which stores all the marker */}
+
           <MarkerDrawer/>
       </svg>
     </div>
