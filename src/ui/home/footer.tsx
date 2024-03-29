@@ -17,28 +17,6 @@ const Footer = () => {
 					</a>
 					. All Rights Reserved.
 				</span>
-				<ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-white dark:text-gray-400 sm:mt-0">
-					<li>
-						<a href="#" className="hover:underline me-4 md:me-6">
-							About
-						</a>
-					</li>
-					<li>
-						<a href="#" className="hover:underline me-4 md:me-6">
-							Privacy Policy
-						</a>
-					</li>
-					<li>
-						<a href="#" className="hover:underline me-4 md:me-6">
-							Licensing
-						</a>
-					</li>
-					<li>
-						<a href="#" className="hover:underline">
-							Contact
-						</a>
-					</li>
-				</ul>
 			</div>
 			<div className="mx-auto w-full max-w-screen-xl">
 				<div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">

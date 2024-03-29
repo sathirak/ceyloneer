@@ -12,7 +12,7 @@ interface HeroImageProps {
   
   const HeroImage: React.FC<HeroImageProps> = ({ imageUrl, altText }) => {
 
-    const [state, setState] = useState('Sri Lanka');
+    const [state, setState] = useState('default');
 
     const updateState = (newValue:string) => {
       setState(newValue);
@@ -22,6 +22,9 @@ interface HeroImageProps {
       <div className="relative p-5 flex items-center justify-center">
         <Map state={state} updateState={updateState} />
         <ProvinceCard state={state}/>
+
+
+        
       </div>
     );
   }
