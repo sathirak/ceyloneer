@@ -22,6 +22,9 @@ interface HeroImageProps {
       <div className="relative p-5 flex items-center justify-center">
         <Map state={state} updateState={updateState} />
         <ProvinceCard state={state}/>
+
+
+        
       </div>
     );
   }

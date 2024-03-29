@@ -55,7 +55,7 @@ const ProvinceCard: React.FC<ProvinceCardProps> = ({ state }) => {
 
   return (
     <div className="relative inset-0 justify-center w-[40%] flex flex-col">
-      <h1 className={`text-slate text-5xl font-bold ${grenze_gotisch.className} mt-0`}>
+      <h1 className={`text-slate text-5xl font-bold mt-0`}>
         {title}
       </h1>
       <p className="text-slate mt-4 mb-0">
