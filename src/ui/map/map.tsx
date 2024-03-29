@@ -56,31 +56,31 @@ export const Map: React.FC<MapProps> = ({ state, updateState }) => {
           .st2{font-size:14px;}`}
         </style>
             
-        <g onClick={() => handlePrClick('Central')} className={state === 'Central' ? 'st0-active' : 'st0'}>
+        <g onClick={() => handlePrClick('cp')} className={state === 'cp' ? 'st0-active' : 'st0'}>
         <Pr.PrCentral />
       </g>
-      <g onClick={() => handlePrClick('Eastern')} className={state === 'Eastern' ? 'st0-active' : 'st0'}>
+      <g onClick={() => handlePrClick('ep')} className={state === 'ep' ? 'st0-active' : 'st0'}>
         <Pr.PrEastern />
       </g>
-      <g onClick={() => handlePrClick('NorthCentral')} className={state === 'NorthCentral' ? 'st0-active' : 'st0'}>
+      <g onClick={() => handlePrClick('ncp')} className={state === 'ncp' ? 'st0-active' : 'st0'}>
         <Pr.PrNorthCentral />
       </g>
-      <g onClick={() => handlePrClick('NorthWestern')} className={state === 'NorthWestern' ? 'st0-active' : 'st0'}>
+      <g onClick={() => handlePrClick('nwp')} className={state === 'nwp' ? 'st0-active' : 'st0'}>
         <Pr.PrNorthWestern />
       </g>
-      <g onClick={() => handlePrClick('Northern')} className={state === 'Northern' ? 'st0-active' : 'st0'}>
+      <g onClick={() => handlePrClick('np')} className={state === 'np' ? 'st0-active' : 'st0'}>
         <Pr.PrNorthern />
       </g>
-      <g onClick={() => handlePrClick('Sabaragamuwa')} className={state === 'Sabaragamuwa' ? 'st0-active' : 'st0'}>
+      <g onClick={() => handlePrClick('swp')} className={state === 'swp' ? 'st0-active' : 'st0'}>
         <Pr.PrSabaragamuwa />
       </g>
-      <g onClick={() => handlePrClick('Southern')} className={state === 'Southern' ? 'st0-active' : 'st0'}>
+      <g onClick={() => handlePrClick('sp')} className={state === 'sp' ? 'st0-active' : 'st0'}>
         <Pr.PrSouthern />
       </g>
-      <g onClick={() => handlePrClick('Uva')} className={state === 'Uva' ? 'st0-active' : 'st0'}>
+      <g onClick={() => handlePrClick('up')} className={state === 'up' ? 'st0-active' : 'st0'}>
         <Pr.PrUva />
       </g>
-      <g onClick={() => handlePrClick('Western')} className={state === 'Western' ? 'st0-active' : 'st0'}>
+      <g onClick={() => handlePrClick('wp')} className={state === 'wp' ? 'st0-active' : 'st0'}>
         <Pr.PrWestern />
       </g>
 

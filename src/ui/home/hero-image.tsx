@@ -12,7 +12,7 @@ interface HeroImageProps {
   
   const HeroImage: React.FC<HeroImageProps> = ({ imageUrl, altText }) => {
 
-    const [state, setState] = useState('Sri Lanka');
+    const [state, setState] = useState('default');
 
     const updateState = (newValue:string) => {
       setState(newValue);
