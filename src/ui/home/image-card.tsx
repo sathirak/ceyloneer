@@ -1,23 +1,35 @@
 "use client";
 
+import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
+const playfair = Playfair_Display({ subsets: ["latin"] });
+
 interface ImageCardProps {
-    image_set:{ url: string; description: string; }[]
-    quote:string
+	title: string;
+	description: string;
+	quote: string;
+	image_set: { url: string; description: string }[];
 }
 
-export const ImageCard: React.FC<ImageCardProps> = ({ image_set, quote }) => {
+export const ImageCard: React.FC<ImageCardProps> = ({ image_set, quote, title, description }) => {
 
-    const [main_image, set_main_image] = useState(image_set[0]);
+    const [main_image, set_main_image] = useState(image_set[0])
 
 	const switch_img = ({ url, description }: { url: string; description: string }) => {
-		set_main_image({ url, description });
-	};	
+		set_main_image({ url, description })
+	};
+
+    useEffect(() => {
+        set_main_image(image_set[0])
+    }, [image_set])
 
     return (
+        <div className="relative inset-0 justify-center w-[40%] flex flex-col">
+        <h1 className={`text-slate-600 text-5xl font-bold mt-0 ${playfair.className}`}>{title}</h1>
+        <p className="text-slate mt-4 mb-0">{description}</p>
         <div className="grid gap-4 m-6">
             <div>
                 <div className="relative">
@@ -35,8 +47,8 @@ export const ImageCard: React.FC<ImageCardProps> = ({ image_set, quote }) => {
                             <Image
                                 src={url}
                                 alt={description}
-                                width={300}
-                                height={200}
+                                width={200}
+                                height={100}
                                 className="h-auto max-w-full rounded-lg w-[100%] h-auto cursor-pointer select-none"
                             />
                         </div>
@@ -64,6 +76,7 @@ export const ImageCard: React.FC<ImageCardProps> = ({ image_set, quote }) => {
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
             </Link>
+        </div>
         </div>
     );
 };

@@ -21,7 +21,7 @@ export const Map: React.FC<MapProps> = ({ state, updateState }) => {
         y="0px"
         width={"100%"}
         height={"100%"}
-        viewBox="0 0 800 600"
+        viewBox="0 0 700 600"
         className="w-[1000px] h-[1000px]"
       >
 
