@@ -32,11 +32,11 @@ export const province_data = {
         description: "Explore the regions and towns around Central Province and dig deeper into the experiences in each destination.",
         quote: "Emerald landscapes and tranquil lakes flourish in a cool climate, perfect for savoring savory rice and curry delicacies amid aromatic spice gardens.",
         values: [
-            { url: "https://picsum.photos/200/100?random=987", description: "Serene landscapes and rich heritage" },
-            { url: "https://picsum.photos/200/100?random=654", description: "Vibrant local market flavors" },
-            { url: "https://picsum.photos/200/100?random=321", description: "Unforgettable journey through ruins" },
-            { url: "https://picsum.photos/200/100?random=789", description: "Tranquility of a secluded beach" },
-            { url: "https://picsum.photos/200/100?random=123", description: "Lively rhythm of a vibrant city" },
+            { url: "https://picsum.photos/200/100?random=587", description: "Serene landscapes and rich heritage" },
+            { url: "https://picsum.photos/200/100?random=614", description: "Vibrant local market flavors" },
+            { url: "https://picsum.photos/200/100?random=621", description: "Unforgettable journey through ruins" },
+            { url: "https://picsum.photos/200/100?random=739", description: "Tranquility of a secluded beach" },
+            { url: "https://picsum.photos/200/100?random=124", description: "Lively rhythm of a vibrant city" },
         ],
     },
     sp: {
