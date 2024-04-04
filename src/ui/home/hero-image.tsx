@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import {Map} from '../map/map'
 import ProvinceCard from "./province-card";
 import { useState } from "react";
@@ -8,8 +7,8 @@ import { useState } from "react";
 interface HeroImageProps {
     imageUrl: string;
     altText: string;
-  }
-  
+}
+
   const HeroImage: React.FC<HeroImageProps> = ({ imageUrl, altText }) => {
 
     const [state, setState] = useState('default');
