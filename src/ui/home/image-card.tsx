@@ -23,7 +23,7 @@ export const ImageCard: React.FC<ImageCardProps> = ({ image_set, quote, title, d
 	},[image_set]);
 
 	return (
-		<div className="relative inset-0 justify-center w-[40%] flex flex-col">
+		<div className="relative inset-0 justify-center w-[40%] flex flex-col ">
 			<h1 className={`text-slate-600 text-5xl font-bold mt-0 ${playfair.className}`}>{title}</h1>
 			<p className="text-slate mt-4 mb-0">{description}</p>
 			<div className="grid gap-4 m-6">
@@ -31,7 +31,7 @@ export const ImageCard: React.FC<ImageCardProps> = ({ image_set, quote, title, d
 					<div className="relative">
 						<Image src={main_image.url} width={300} height={200} className="bg-slate-400 h-auto max-w-full rounded-lg w-[100%] h-auto select-none " alt="" />
 						<div
-							className="absolute m-2 bottom-0 p-2 text-sm text-cyan-800 rounded-lg bg-cyan-50 dark:bg-cyan-800 dark:text-cyan-300 opacity-65 hover:opacity-100 cursor select-none"
+							className="absolute m-2 bottom-0 p-2 text-sm text-cyan-800 rounded-lg bg-cyan-50 dark:bg-cyan-800 dark:text-cyan-300 opacity-65 hover:opacity-100 transition-opacity duration-500 cursor select-none"
 							role="alert">
 							<Link href={"/" + main_image.url} className="font-medium">
 								See on Map
